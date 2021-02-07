@@ -62,7 +62,8 @@ a:hover {
   margin-left: 5%;
 }
 
-#producerStyling {
+#producerStyling,
+#prodButton {
   background-color: #6c899e;
 }
 
@@ -89,8 +90,8 @@ a:hover {
   justify-self: center;
   align-self: center;
 }
-.creatAccountButton {
-  display: block;
+.creatAccountButton,
+.purchaseButton {
   background-color: #709e5c;
   color: #f2f2f2;
   text-transform: uppercase;
@@ -100,6 +101,52 @@ a:hover {
   border-top-left-radius: 10px;
   text-decoration: none;
   border-bottom-right-radius: 10px;
+  margin-top: 1em;
+}
+
+.creatAccountButton {
+  display: block;
+}
+.browseWrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 1em;
+}
+#browseText {
+  font-weight: bold;
+  color: #40403f;
+}
+
+#browseHeader {
+  align-self: center;
+  justify-self: center;
+}
+
+.thumbnailWrapper {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1em;
+  align-content: center;
+  justify-content: center;
+}
+
+.movieThubmnails {
+  list-style: none;
+}
+.dinoLI {
+  display: inline;
+}
+.dinoBack {
+  max-width: 100%;
+  height: auto;
+  border: solid;
+  border-width: 5px;
+}
+
+.filmPageWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
 }
 
 .nestedBot {
@@ -151,7 +198,7 @@ a:hover {
 .helpWrapper {
   align-self: center;
   justify-self: end;
-  margin-right: 2em;
+  margin-right: 3em;
 }
 
 #copyR {
