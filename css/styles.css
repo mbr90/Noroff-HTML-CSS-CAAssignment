@@ -1,0 +1,106 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+  height: 100vh;
+}
+
+.nestedTop {
+  background-color: #709e5c;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.burger {
+  justify-self: end;
+  align-self: center;
+  margin-right: 5%;
+}
+nav {
+  display: none;
+}
+
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.logoWrap {
+  align-self: center;
+}
+
+.logo {
+  background: url(../images/SquareEyes_Logo.png);
+  min-height: 5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 5%;
+}
+
+#producerStyling {
+  background-color: #6c899e;
+}
+.nestedMain {
+  align-self: center;
+}
+
+.nestedBot {
+  background-color: #6c899e;
+}
+
+.centerHomeImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-width: fit-content;
+  margin-top: 2em;
+}
+
+.homeTextAlignment {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.accountButtonWrapper {
+  justify-self: center;
+  align-self: center;
+}
+.creatAccountButton {
+  display: block;
+  background-color: #709e5c;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em 2em;
+  border-top-left-radius: 10px;
+  text-decoration: none;
+  border-bottom-right-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .homeTextAlignment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+  .accountButtonWrapper {
+    justify-self: end;
+    align-self: center;
+  }
+}
