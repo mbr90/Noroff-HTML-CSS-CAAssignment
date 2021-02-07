@@ -24,7 +24,6 @@ nav {
 }
 
 label {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   color: #f2f2f2;
 }
@@ -35,6 +34,20 @@ label {
 
 #hamburger-menu:checked ~ nav {
   display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+a:hover {
+  color: black;
+}
+
+.headerNav {
+  list-style: none;
 }
 
 .logoWrap {
@@ -52,12 +65,9 @@ label {
 #producerStyling {
   background-color: #6c899e;
 }
-.nestedMain {
-  align-self: center;
-}
 
-.nestedBot {
-  background-color: #6c899e;
+#homeTitle {
+  color: #40403f;
 }
 
 .centerHomeImg {
@@ -92,7 +102,65 @@ label {
   border-bottom-right-radius: 10px;
 }
 
-@media only screen and (min-width: 768px) {
+.nestedBot {
+  background-color: #6c899e;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.faqFoot {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: start;
+  align-content: start;
+  grid-gap: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.socialMedia {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: start;
+  align-content: start;
+  grid-gap: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.helpNstuff {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.helpButton {
+  display: block;
+  border-color: #f2f2f2;
+  border-style: solid;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  border-width: 2px;
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.helpWrapper {
+  align-self: center;
+  justify-self: end;
+  margin-right: 2em;
+}
+
+#copyR {
+  color: #f2f2f2;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: 700px) {
   .homeTextAlignment {
     display: grid;
     grid-template-columns: 1fr 1fr;
