@@ -67,6 +67,24 @@ a:hover {
   background-color: #6c899e;
 }
 
+.loginForm {
+  display: grid;
+  grid-template-columns: 100%;
+}
+#loginH1,
+#loginCreate,
+#newSqr,
+#logCreateButton,
+.inputForm,
+#loginButton {
+  justify-self: center;
+}
+#loginButton {
+  padding: 2em;
+}
+#logCreateButton {
+  margin-top: 1em;
+}
 #homeTitle {
   color: #40403f;
 }
