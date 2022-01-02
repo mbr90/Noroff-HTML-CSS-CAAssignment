@@ -67,6 +67,19 @@ a:hover {
   background-color: #6c899e;
 }
 
+.container,
+.results {
+  margin: 0 auto;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .loginForm,
 .uploadWrapper {
   display: grid;
@@ -95,6 +108,11 @@ a:hover {
 
 .centerHomeImg {
   width: 100%;
+}
+
+.attImg {
+  width: 50%;
+  height: 50px;
 }
 
 .homeTextAlignment {
