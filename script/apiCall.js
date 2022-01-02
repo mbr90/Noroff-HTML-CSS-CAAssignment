@@ -1,6 +1,3 @@
-/* Here is your key: 2301119 */
-console.log("Hello World!");
-
 const url =
   "https://api.themoviedb.org/3/movie/popular?api_key=c7a9a6147cc43aac6069597872e5590b&language=en-US&page=1";
 const resultsContainer = document.querySelector(".results");
