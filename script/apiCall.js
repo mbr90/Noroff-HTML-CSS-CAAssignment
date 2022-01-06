@@ -15,7 +15,7 @@ async function apiCall() {
         break;
       }
 
-      resultsContainer.innerHTML += `<a href="details.html?id=${movies[i].id}" class="result">
+      resultsContainer.innerHTML += `<a href="filmPage.html?id=${movies[i].id}" class="result">
       <div class = backgroundImg><img src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}" alt="${movies[i].original_title}" /></div>
       <h2>${movies[i].original_title}</h2>
            <p>Score: ${movies[i].vote_average}</p>

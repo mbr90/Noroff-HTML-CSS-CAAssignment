@@ -248,6 +248,47 @@ a:hover {
   margin-bottom: 0.5em;
 }
 
+.form-error {
+  display: none;
+  color: red;
+  font-size: 12px;
+}
+
+.formSuccess {
+  display: none;
+  color: rgb(64, 248, 32);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loading {
+  border: 18px solid white;
+  border-top: 18px solid #709e5c;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spin 2s linear infinite;
+}
+
+.loading-prod {
+  border: 18px solid white;
+  border-top: 18px solid #6c899e;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media only screen and (min-width: 700px) {
   .homeTextAlignment {
     display: grid;

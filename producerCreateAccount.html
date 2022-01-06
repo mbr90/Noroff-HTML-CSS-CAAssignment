@@ -50,25 +50,36 @@
 
     </div>
 
-
-
-    <div class="nestedMain">
-      <div class="loginForm">
-
-        <h1 id="loginH1">Create your SquareEyes account</h1>
-        <div class=inputForm>
-          <h2>Username</h2>
-          <input type="text" placeholder="Enter Username">
-          <h2>Password</h2>
-          <input type="text" placeholder="Enter Password">
-
+    <div class="formContainer">
+      <form id="contactForm">
+        <div>
+          <div class="formSuccess">Form passed validation!</div>
+          <label>Name</label>
+          <input name="name" id="name" placeholder="Your name" />
+          <div class="form-error" id="name-error">Name is required, please enter your name!</div>
         </div>
-        <div id="loginButtonProducer" class="purchaseFilmWrapper"><a href="producerBrowseFilmPage.html"
-            class="prodButton">Create Account</a></div>
-
-
-      </div>
+        <div>
+          <label>Email</label>
+          <input name="email" id="email" placeholder="Example@email.com" />
+          <div class="form-error" id="email-error">Please provide your email address!</div>
+        </div>
+        <div>
+          <label>Address</label>
+          <input name="address" id="address" placeholder="Your address (minimum 25 characters)" />
+          <div class="form-error" id="address-error">Please provide your address, must be atleast 25 characters!
+          </div>
+        </div>
+        <div>
+          <label>Subject</label>
+          <textarea name="subject" id="subject" placeholder="Your message (minimum 10 characters)"></textarea>
+          <div class="form-error" id="subject-error">Please Enter your message, must be atleast 10 characters!
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
     </div>
+    <script src="script/createAccForm.js"></script>
+
 
 
     <div class="nestedBot">
