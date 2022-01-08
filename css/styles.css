@@ -50,11 +50,11 @@ header a {
 
 /* Main Styling - in general */
 main {
-  margin-top: 2%;
+  margin-top: 2rem;
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2%;
+  margin-bottom: 2rem;
 }
 
 .indexH1 {
@@ -85,16 +85,69 @@ main {
   border: none;
 }
 
-main a {
-  margin-right: 2rem;
-  margin-left: auto;
-}
 .creatAccountButton {
   background-color: #709e5c;
 }
 
+main a {
+  margin-right: 2rem;
+  margin-left: auto;
+}
+
 .creatAccountButton:hover {
   color: black;
+}
+
+/* Form Styling */
+.form-error {
+  display: none;
+  color: red;
+  font-size: 12px;
+}
+
+.formSuccess {
+  display: none;
+  color: rgb(64, 248, 32);
+  width: 100%;
+}
+
+.formSuccess,
+.creatAccountButton a,
+.squareFormButton,
+.squareForm,
+.loadingForm,
+.loadingMessage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.squareForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.squareFormItem {
+  padding: 5px;
+  margin-left: 0;
+  margin-right: auto;
+  width: 100%;
+}
+
+.squareFormInput {
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
+  min-height: 25px;
+  margin-top: 5px;
+}
+
+.squareFormButton {
+  margin-top: 15px;
+}
+.loadingForm,
+.loadingMessage {
+  margin-top: 15px;
+  padding: 10px;
 }
 
 /* Footer Styling  */
@@ -195,9 +248,34 @@ footer a:hover {
     margin-right: auto;
   }
 
-  main,
   footer {
     margin-top: 10%;
     padding-bottom: 0;
+  }
+}
+
+/*Animation */
+
+.loading,
+.loadingForm {
+  border: 20px solid #6c899e;
+  border-top: 20px solid #709e5c;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 3s linear infinite;
+}
+
+.loadingForm,
+.loadingMessage {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

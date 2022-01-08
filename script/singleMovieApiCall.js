@@ -31,5 +31,3 @@ async function apiCall() {
 }
 
 apiCall();
-
-console.log(url);
