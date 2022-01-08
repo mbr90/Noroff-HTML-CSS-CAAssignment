@@ -272,7 +272,7 @@ a:hover {
 }
 
 .loading-prod {
-  border: 18px solid white;
+  border: 18px solid black;
   border-top: 18px solid #6c899e;
   border-radius: 50%;
   width: 200px;

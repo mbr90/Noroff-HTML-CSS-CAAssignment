@@ -1,9 +1,10 @@
 const form = document.querySelector("#contactForm");
-const success = document.querySelector(".formSuccess");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#email-error");
 const password = document.querySelector("#password");
 const passwordError = document.querySelector("#password-error");
+const failed = document.querySelector("#failedMessage");
+const success = document.querySelector("#successMessage");
 
 function formInputValidation(event) {
   event.preventDefault();
@@ -23,11 +24,13 @@ function formInputValidation(event) {
     lenControll(password.value, 8) === true &&
     emailValidation(email.value) === true
   ) {
+    failed.style.display = "none";
+    success.style.display = "block";
     window.setTimeout(function () {
       window.location.href = "browseFilms.html";
-    }, 200);
+    }, 500);
   } else {
-    success.style.display = "none";
+    failed.style.display = "block";
   }
 }
 
