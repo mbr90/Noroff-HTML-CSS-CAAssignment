@@ -25,11 +25,17 @@
             <input type="checkbox" id="hamburger-menu">
             <nav>
                 <ul class="navMenu">
-
+                    <li><a class="navItem" href="index.html">Home</a></li>
                     <li><a class="navItem" href="logInPage.html">Log In</a></li>
-
+                    <li><a class="navItem" href="accountPage.html">Account Page</a></li>
                     <li><a class="navItem" href="createAccountPage.html">Create Account</a></li>
-
+                    <li><a class="navItem" href="browseFilms.html">Browse Films</a></li>
+                    <li><a class="navItem" href="producerAccount.html">Producer Account</a></li>
+                    <li><a class="navItem" href="producerBrowseFilmPage.html">Producer Browse Films</a></li>
+                    <li><a class="navItem" href="producerCreateAccount.html">Producer Create Account</a></li>
+                    <li><a class="navItem" href="producerUploadFIlm.html">Upload Films</a></li>
+                    <li><a class="navItem" href="producerFilmPage.html">Producer Film Page</a></li>
+                    <li><a class="navItem" href="purchaseFilmPage.html">Purchase Film Page</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +47,8 @@
         <p class="indexIngress">Crafted by people who are passionate about making films, for people who are passionate
             about watching high
             quality films. </p>
-        <a href="logInPage.html"> <button class="creatAccountButton">Log In </button></a>
+        <button class="creatAccountButton"><a href="logInPage.html">Log In</a>
+        </button>
     </main>
 
     <footer>

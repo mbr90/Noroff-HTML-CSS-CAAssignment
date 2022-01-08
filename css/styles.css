@@ -60,14 +60,17 @@ main {
 .indexH1 {
   text-align: center;
 }
+
 .indexImg {
   width: 100%;
   padding: 2rem;
 }
 
 .indexIngress {
-  padding: 10px;
   width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 .creatAccountButton {
@@ -78,15 +81,20 @@ main {
   border-bottom-right-radius: 10px;
   min-width: 180px;
   height: 50px;
-  margin-right: 5%;
+  color: #f2f2f2;
+  border: none;
+}
+
+main a {
+  margin-right: 2rem;
   margin-left: auto;
 }
 .creatAccountButton {
   background-color: #709e5c;
-  border-color: 709e5c;
 }
-.creatAccountButton a {
-  color: #f2f2f2;
+
+.creatAccountButton:hover {
+  color: black;
 }
 
 /* Footer Styling  */
@@ -108,6 +116,14 @@ footer section {
   margin-right: auto;
 }
 
+footer a {
+  color: #f2f2f2;
+}
+
+footer a:hover {
+  color: black;
+}
+
 @media only screen and (min-width: 1200px) {
   .burgerLabel {
     display: none;
@@ -125,7 +141,7 @@ footer section {
 
   .burger {
     margin-top: auto;
-    margin-right: 0;
+    margin-right: 2rem;
     margin-left: auto;
     margin-bottom: auto;
   }
@@ -171,8 +187,14 @@ footer section {
     flex-direction: column;
   }
 
+  footer section a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   main,
   footer {
     margin-top: 10%;
+    padding-bottom: 0;
   }
 }
