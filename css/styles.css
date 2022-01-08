@@ -180,6 +180,9 @@ footer a:hover {
     right: 0px;
     padding: 20px;
   }
+  .navMenu li {
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
