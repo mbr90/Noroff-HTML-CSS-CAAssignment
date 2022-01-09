@@ -19,8 +19,9 @@ async function apiCall() {
     pageTitle.innerHTML += `${movie.title}`;
     queryResult.innerHTML += `<div class="resultDet">
         <h2>${movie.original_title}</h2>
+        <div class = "filmPoster"><img src="https://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="${movie.original_title}" /></div>
         <p><b>Score:</b> ${movie.vote_average}</p>
-        <div class = backgroundImg><img src="https://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="${movie.original_title}" /></div>
+        <p class="filmSum"><b>Overview:</b>${movie.overview}</p>
       </div>`;
   } catch (error) {
     console.log(error);

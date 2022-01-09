@@ -5,6 +5,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -146,19 +150,25 @@ main a {
 
 /* Film Styling */
 
-.queryResult,
-.resultDet {
+.queryResult {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 
 .resultDet {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filmSum {
+  width: 50%;
+  margin: 10px;
 }
 
+.filmPoster {
+  margin: 10px;
+}
 /* Form Styling */
 .form-error,
 #failedMessage {
@@ -321,6 +331,10 @@ footer a:hover {
   footer {
     margin-top: 10%;
     padding-bottom: 0;
+  }
+
+  .filmSum {
+    width: 80%;
   }
 }
 
