@@ -22,7 +22,7 @@ async function apiCall() {
         <h2>${movie.original_title}</h2>
         <div class = "filmPoster"><img src="https://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="${movie.original_title}" /></div>
         <p><b>Score:</b> ${movie.vote_average}</p>
-        <p class="filmSum"><b>Overview:</b>${movie.overview}</p>     
+        <p class="filmSum"><b>Overview:</b> ${movie.overview}</p>     
         <a href="purchaseFilmPage.html?id=${movie.id}" class="centerButton"><button class="creatAccountButton">
         Add to Cart</button></a>
       </div>`;
