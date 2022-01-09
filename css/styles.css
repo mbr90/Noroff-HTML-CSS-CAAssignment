@@ -136,7 +136,8 @@ main a {
   margin-bottom: 2rem;
 }
 .attribution img {
-  height: 50px;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .results {
