@@ -18,7 +18,7 @@ async function apiCall() {
       resultsContainer.innerHTML += `<a href="filmPage.html?id=${movies[i].id}" class="result">
       <div class = backgroundImg><img src="https://image.tmdb.org/t/p/w342/${movies[i].poster_path}" alt="${movies[i].original_title}" /></div>
       <h2 class="movieTitle">${movies[i].original_title}</h2>
-           <p>Score: ${movies[i].vote_average}</p>
+           <p class="movieScore">Score: ${movies[i].vote_average}</p>
       </a>`;
     }
   } catch (error) {
