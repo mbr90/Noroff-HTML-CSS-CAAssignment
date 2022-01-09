@@ -148,7 +148,8 @@ main a {
   margin-bottom: 2rem;
 }
 
-.movieTitle {
+.movieTitle,
+.movieScore {
   color: black;
 }
 
