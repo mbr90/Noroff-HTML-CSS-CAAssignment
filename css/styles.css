@@ -169,6 +169,21 @@ main a {
 .filmPoster {
   margin: 10px;
 }
+
+/*Purchase Styling */
+
+.purchase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.removeButton {
+  display: none;
+}
+
 /* Form Styling */
 .form-error,
 #failedMessage {
