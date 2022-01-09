@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Settigs and preferences" />
   <title>Your Account</title>
-  <link href="css/oldStyles.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
   <!-- Hotjar Tracking Code for https://gallant-chandrasekhar-c7305e.netlify.app/ -->
   <script>
     (function (h, o, t, j, a, r) {
@@ -21,85 +21,55 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="nestedTop">
-      <a class="logoWrap" href="index.html">
-        <div class="logo"></div>
-      </a>
-      <div class="burger"> <label for="hamburger-menu"><a>Menu</a></label>
-        <input type="checkbox" id="hamburger-menu">
-        <nav>
-          <ul class="headerNav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="logInPage.html">Log In</a></li>
-            <li><a href="accountPage.html">Account Page</a></li>
-            <li><a href="createAccountPage.html">Create Account</a></li>
-            <li><a href="browseFilms.html">Browse Films</a></li>
-            <!-- <li><a href="filmPage.html">Film Page</a></li> -->
-            <li><a href="producerAccount.html">Producer Account</a></li>
-            <li><a href="producerBrowseFilmPage.html">Producer Browse Films</a></li>
-            <li><a href="producerCreateAccount.html">Producer Create Account</a></li>
-            <li><a href="producerUploadFIlm.html">Upload Films</a></li>
-            <li><a href="producerFilmPage.html">Producer Film Page</a></li>
-            <li><a href="purchaseFilmPage.html">Purchase Film Page</a></li>
-      </div>
-      </ul>
+  <header>
+    <a href="index.html"> <img src="images/SquareEyes_Logo.png" alt="SquareEyes logo" class="logo"></a>
+    <div class="burger"> <label class="burgerLabel" for="hamburger-menu"><a>Menu</a></label>
+      <input type="checkbox" id="hamburger-menu">
+      <nav>
+        <ul class="navMenu">
+          <li><a class="navItem" href="index.html">Home</a></li>
+          <li><a class="navItem" href="browseFilms.html">Browse Films</a></li>
+          <!-- <li><a class="navItem" href="purchaseFilmPage.html">Purchase Cart</a></li> -->
+        </ul>
       </nav>
-
     </div>
-
-
-    <div class="nestedMain">
-
-      <h1>Account overview</h1>
-      <p>Nam eget placerat neque, nec viverra arcu. Donec bibendum sodales magna, ac finibus magna ultricies vel.
-        Curabitur purus libero, tempor eget dui in, hendrerit porta turpis. Vivamus quis pharetra dui, et lacinia erat.
-        Maecenas porttitor orci at justo euismod,
-        ac fermentum ex consectetur. Maecenas laoreet suscipit sapien, quis euismod magna suscipit in. Phasellus congue
-        pellentesque vestibulum. Phasellus suscipit lectus vitae consequat fringilla. Curabitur suscipit metus vitae
-        mollis blandit.
-        Nulla bibendum eros sed velit egestas, in rutrum massa suscipit. Quisque nec aliquam massa. Nunc nec tincidunt
-        elit. Mauris molestie enim vel elementum efficitur. Vivamus vitae nibh sit amet magna semper tempor viverra in
-        enim.</p>
-
-    </div>
-
-
-
-    <div class="nestedBot">
-      <div class="faqWrapper">
-        <section class="faqFoot">
-          <a href="index.html">Questions and answers</a>
-          <a href="index.html">About SquareEyes</a>
-          <a href="index.html">Promotional Code</a>
-        </section>
-      </div>
-      <div class="socialMediaWrapper">
-        <section class="socialMedia">
-          <a href="https://facebook.com/">SquareEyes on Facebook</a>
-          <a href="https://twitter.com/">SquareEyes on Twitter</a>
-          <a href="https://instagram.com/">SquareEyes on Instagram</a>
-        </section>
-      </div>
-
-      <div class="helpWrapper">
-        <section class="helpNstuff">
-          <a href="index.html" class=helpButton>Contact Us</a>
-          <a href="index.html" class="helpButton">Help</a>
-        </section>
-      </div>
-      <div id="copyR">Copyright Mats Brattland &copy; 2021</div>
-    </div>
-  </div>
-
   </header>
+  <main>
+    <h1 class="indexH1">Manage your SquareEyes account</h1>
+    <form class="squareForm" id="contactForm">
+      <div class="squareFormItem">
+        <label>Update Email address:</label>
+        <input class="squareFormInput" name="email" id="email" placeholder="Example@email.com" />
+      </div>
+      <div class="squareFormItem">
+        <label>Change Password:</label>
+        <input class="squareFormInput" name="password" id="password" placeholder="Your password">
+      </div>
+    </form>
+    <a class="squareFormButton" href="browseFilms.html"><button class="creatAccountButton">Save Changes</button></a>
 
+    <p class="createPrompt">Producer?</p>
+    <a class="centerButton" href="producerAccount.html"> <button class="creatAccountButton" id="producerStyling">Switch
+        to Producer Account
+      </button></a>
+  </main>
 
+  <footer>
+    <section class="faqFoot">
+      <a href="index.html">Questions and answers</a>
+      <a href="index.html">About SquareEyes</a>
+      <a href="index.html">Promotional Code</a>
+    </section>
+    <section class="socialMedia">
+      <a href="https://facebook.com/">SquareEyes on Facebook</a>
+      <a href="https://twitter.com/">SquareEyes on Twitter</a>
+      <a href="https://instagram.com/">SquareEyes on Instagram</a>
+    </section>
+    <section class="helpNstuff">
+      <a href="index.html" class=helpButton>Contact Us</a>
+      <a href="index.html" class="helpButton">Help</a>
+    </section>
+  </footer>
 </body>
-
-
-
-
-
 
 </html>
