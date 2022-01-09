@@ -148,6 +148,10 @@ main a {
   margin-bottom: 2rem;
 }
 
+.movieTitle {
+  color: black;
+}
+
 /* Film Styling */
 
 .queryResult {
