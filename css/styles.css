@@ -24,6 +24,8 @@ header {
   background-color: #709e5c;
   display: flex;
   min-height: 116px;
+  position: sticky;
+  top: 0;
 }
 
 header a:hover {
@@ -140,6 +142,21 @@ main a {
   align-items: center;
   gap: 50px;
   margin-bottom: 2rem;
+}
+
+/* Film Styling */
+
+.queryResult,
+.resultDet {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.resultDet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* Form Styling */

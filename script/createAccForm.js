@@ -26,7 +26,7 @@ function formInputValidation(event) {
     emailError.style.display = "block";
   }
 
-  if (lenControll(address.value, 5) === true) {
+  if (lenControll(address.value, 4) === true) {
     addressError.style.display = "none";
   } else {
     addressError.style.display = "block";
@@ -40,7 +40,7 @@ function formInputValidation(event) {
 
   if (
     lenControll(password.value, 7) === true &&
-    lenControll(address.value, 5) === true &&
+    lenControll(address.value, 4) === true &&
     emailValidation(email.value) === true &&
     lenControll(name.value, 0) === true
   ) {
