@@ -14,14 +14,14 @@ function formInputValidation(event) {
   } else {
     emailError.style.display = "block";
   }
-  if (lenControll(password.value, 8) === true) {
+  if (lenControll(password.value, 0) === true) {
     passwordError.style.display = "none";
   } else {
     passwordError.style.display = "block";
   }
 
   if (
-    lenControll(password.value, 8) === true &&
+    lenControll(password.value, 0) === true &&
     emailValidation(email.value) === true
   ) {
     failed.style.display = "none";

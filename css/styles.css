@@ -27,12 +27,13 @@ header {
 }
 
 header a:hover {
-  color: black;
+  color: white;
 }
 
 header a {
-  color: white;
+  color: black;
   font-weight: bold;
+  font-size: 1.4em;
 }
 
 .navItem {
@@ -75,14 +76,15 @@ main {
 
 .creatAccountButton {
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: bold;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   min-width: 180px;
   height: 50px;
-  color: #f2f2f2;
+  color: black;
   border: none;
+  padding: 5px;
 }
 
 .creatAccountButton {
@@ -95,7 +97,49 @@ main a {
 }
 
 .creatAccountButton:hover {
-  color: black;
+  color: white;
+}
+
+/* Browse Films Styling */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.movieTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 342px;
+}
+.attribution,
+#browseHeader {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attribution,
+#browseHeader {
+  margin-bottom: 2rem;
+}
+.attribution img {
+  height: 50px;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 2rem;
 }
 
 /* Form Styling */
@@ -103,7 +147,7 @@ main a {
 #failedMessage {
   display: none;
   color: red;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .formSuccess,
@@ -111,7 +155,7 @@ main a {
   display: none;
   color: #709e5c;
   width: 100%;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .formSuccess,
@@ -120,7 +164,9 @@ main a {
 .squareForm,
 .loadingForm,
 .loadingMessage,
-#failedMessage {
+#failedMessage,
+.createPrompt,
+.centerButton {
   margin-left: auto;
   margin-right: auto;
 }
@@ -150,7 +196,9 @@ main a {
 }
 .loadingForm,
 .loadingMessage,
-#failedMessage {
+#failedMessage,
+.createPrompt,
+.centerButton {
   margin-top: 15px;
   padding: 10px;
 }
@@ -175,11 +223,11 @@ footer section {
 }
 
 footer a {
-  color: #f2f2f2;
+  color: black;
 }
 
 footer a:hover {
-  color: black;
+  color: white;
 }
 
 @media only screen and (min-width: 1200px) {

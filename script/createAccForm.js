@@ -26,21 +26,21 @@ function formInputValidation(event) {
     emailError.style.display = "block";
   }
 
-  if (lenControll(address.value, 10) === true) {
+  if (lenControll(address.value, 5) === true) {
     addressError.style.display = "none";
   } else {
     addressError.style.display = "block";
   }
 
-  if (lenControll(password.value, 8) === true) {
+  if (lenControll(password.value, 7) === true) {
     passwordError.style.display = "none";
   } else {
     passwordError.style.display = "block";
   }
 
   if (
-    lenControll(password.value, 8) === true &&
-    lenControll(address.value, 10) === true &&
+    lenControll(password.value, 7) === true &&
+    lenControll(address.value, 5) === true &&
     emailValidation(email.value) === true &&
     lenControll(name.value, 0) === true
   ) {
