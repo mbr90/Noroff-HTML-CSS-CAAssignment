@@ -1,31 +1,26 @@
-const url =
-  "https://api.themoviedb.org/3/movie/popular?api_key=c7a9a6147cc43aac6069597872e5590b&language=en-US&page=1";
+const apiUrl =
+  "https://matsbrattland.no/squareeyes/wp-json/wc/v3/products?consumer_key=ck_e690507e3bab9bbeb1cad9993e12dfcd44491c24&consumer_secret=cs_4e6506f4621abb01566d04125833d124f9e3e9ae";
 const resultsContainer = document.querySelector(".results");
 
-async function apiCall() {
+async function getProducts(url) {
   try {
     const response = await fetch(url);
-    const results = await response.json();
-    const movies = results.results;
+    const products = await response.json();
+    console.log(products);
 
     resultsContainer.innerHTML = "";
-
-    for (let i = 0; i < movies.length; i++) {
-      if (i === 25) {
-        break;
-      }
-
-      resultsContainer.innerHTML += `<a href="filmPage.html?id=${movies[i].id}" class="result">
-      <div class = backgroundImg><img src="https://image.tmdb.org/t/p/w342/${movies[i].poster_path}" alt="${movies[i].original_title}" /></div>
-      <h2 class="movieTitle">${movies[i].original_title}</h2>
-           <p class="movieScore">Score: ${movies[i].vote_average}</p>
+    products.forEach(function (product) {
+      resultsContainer.innerHTML += "";
+      resultsContainer.innerHTML += `<a href="filmPage.html?id=${product.id}" class="result">
+      <div class = backgroundImg><img src="${product.images[0].src}" alt="${product.name}" width="400" height="300" /></div>
+      <h2 class="movieTitle">${product.name}</h2>
+           <p class="movieScore">Price: ${product.regular_price}</p>
       </a>`;
-    }
+    });
   } catch (error) {
     console.log(error);
-
     resultsContainer.innerHTML = `<div class="errMsg">An error occured trying to get results from the API</div>`;
   }
 }
 
-apiCall();
+getProducts(apiUrl);

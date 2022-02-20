@@ -2,35 +2,31 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url =
-  "https://api.themoviedb.org/3/movie/" +
+  "https://matsbrattland.no/squareeyes/wp-json/wc/v3/products/" +
   id +
-  "?language=en-US&api_key=c7a9a6147cc43aac6069597872e5590b&=634649";
+  "?consumer_key=ck_e690507e3bab9bbeb1cad9993e12dfcd44491c24&consumer_secret=cs_4e6506f4621abb01566d04125833d124f9e3e9ae";
 const queryResult = document.querySelector(".queryResult");
 const pageTitle = document.querySelector("title");
 
 async function apiCall() {
-  try {
-    const response = await fetch(url);
-    const results = await response.json();
-    const movie = results;
+  const response = await fetch(url);
+  const products = await response.json();
+  console.log(products);
 
-    queryResult.innerHTML = "";
-    pageTitle.innerHTML = "";
-    pageTitle.innerHTML += `${movie.title}`;
-    queryResult.innerHTML += `
-        <div class="resultDet">
-        <h2>${movie.original_title}</h2>
-        <div class = "filmPoster"><img src="https://image.tmdb.org/t/p/w185/${movie.poster_path}" alt="${movie.original_title}" /></div>
-        <p><b>Score:</b> ${movie.vote_average}</p>
-        <p class="filmSum"><b>Overview:</b> ${movie.overview}</p>     
-        <a href="purchaseFilmPage.html?id=${movie.id}" class="centerButton"><button class="creatAccountButton">
-        Add to Cart</button></a>
-      </div>`;
-  } catch (error) {
-    console.log(error);
+  queryResult.innerHTML = "";
+  pageTitle.innerHTML = "";
+  pageTitle.innerHTML += `${products.name}`;
+  queryResult.innerHTML += `
+      <div class="resultDet">
+      <h2>${products.name}</h2>
+      <div class = "filmPoster"><img src="${products.images[0].src}" alt="${products.name}" width="400" height="300" /></div>
+      <p><b>Price:</b> ${products.price}</p>
+      <p class="filmSum"><b>Overview:</b> ${products.description}</p>
+      <a href="purchaseFilmPage.html?id=${products.id}" class="centerButton"><button class="creatAccountButton">
+      Add to Cart</button></a>
+    </div>`;
 
-    queryResult.innerHTML = `<div class="errMsg">An error occured trying to get results from the API</div>`;
-  }
+  console.log(error);
 }
 
 apiCall();
