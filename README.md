@@ -17,6 +17,7 @@ You can add some bullet points if you'd like to:
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 
