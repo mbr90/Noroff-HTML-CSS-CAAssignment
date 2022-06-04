@@ -3,15 +3,12 @@
 ![image](https://darling-jelly-e3b55d.netlify.app/images/se_home.jpg)
 
 Cross-course project for the front-end developers course at Noroff School of technology and digital media
+
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+The first iteration of this site was a result of the course assignment for HTML and CSS at Noroff. It was supposed to be a properly functioning, responsive website. With several pages and functionality as per the assignment brief. 
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+THe next iteration was to add JavaScript to the site, for form validation and fetching information from an api among other things. 
 
 ## Built With
 
