@@ -8,7 +8,10 @@ Cross-course project for the front-end developers course at Noroff School of tec
 
 The first iteration of this site was a result of the course assignment for HTML and CSS at Noroff. It was supposed to be a properly functioning, responsive website. With several pages and functionality as per the assignment brief. 
 
-THe next iteration was to add JavaScript to the site, for form validation and fetching information from an api among other things. 
+The next iteration was to add JavaScript to the site, for form validation and fetching information from an api among other things. 
+
+More functionality will be added to this site as my studies progress. As my skills improve I envision that I might design the site from the ground up again, as there are some choices that I would make differently at this stage of my developer journey
+
 
 ## Built With
 
